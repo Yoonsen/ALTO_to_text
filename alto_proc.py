@@ -32,12 +32,8 @@ def alto_extract(altofile, to_path = '.'):
     return ndir
 
 
-# In[19]:
-
-
-
 def process_alto(ndir):
-    """Hent ut alle ordene i alto-filen, og legg til paragraf og sidenummer. Mappen ndir peker til mappen der tarfilene ligger"""
+    """Hent ut alle ordene i alto-filen, og legg til paragraf og sidenummer. Mappen ndir peker til mappen der alto-xml-filene ligger"""
     
     import xml.etree.ElementTree as ET
     import shutil
@@ -115,14 +111,6 @@ def process_alto(ndir):
     return text #, hyph
 
 
-# In[5]:
-
-
-alto_extract("/home/larsj/terra/iness/digibok_2006080900016_ocr_xml.tar")
-
-
-# In[20]:
-
-
-process_alto("digibok_2006080900016_ocr_xml/")
+#alto_extract("/home/larsj/terra/iness/digibok_2006080900016_ocr_xml.tar")
+#process_alto("digibok_2006080900016_ocr_xml/")
 
